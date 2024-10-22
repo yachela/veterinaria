@@ -4,7 +4,7 @@ public class Empleado extends Usuario {
 
     private static Empleado instancia;
 
-    public Empleado(String nombre, String apellido) {
+    private Empleado(String nombre, String apellido) {
         super(nombre, apellido);
     }
 
