@@ -1,16 +1,13 @@
 package org.example;
 
-public class Gato implements Especie {
+import java.util.Date;
 
-    @Override
-    public String imprimirEspecie() {
-        return "Gato";
-    }
+public class Gato extends Mascota{
 
-    @Override
-    public String cuidadosEspeciales() {
-
-        return "Cuidados para un gato: Rascadores, arenero limpio, alimentación...";
+    public Gato(String nombre, Date fechaNacimiento, Float peso) {
+        super(nombre, fechaNacimiento, peso, "Gato", "Limpiar patitas");
 
     }
+
+
 }

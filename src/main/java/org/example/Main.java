@@ -19,13 +19,12 @@ public class Main {
                 String direccionAdoptante =JOptionPane.showInputDialog("Ingrese direccion adoptante");
                 int edadAdoptante = Integer.parseInt(JOptionPane.showInputDialog("Ingrese edad"));
                 Adoptante adoptante = new Adoptante(nombreAdoptante, apellidoAdoptante, direccionAdoptante, edadAdoptante);
-                Especie gato = new Gato();
 
                 JOptionPane.showMessageDialog(null, "Datos mascota");
                 String nombreMascota =JOptionPane.showInputDialog("Ingrese nombre mascota");
                 float pesoMascota = Float.parseFloat((JOptionPane.showInputDialog("Ingrese peso")));
                 Date fechaNacimiento = new Date(2020, 1, 1); //
-                Mascota mascota1 = new Mascota(nombreMascota, fechaNacimiento, pesoMascota, gato);
+                Mascota mascota1 = new Gato(nombreMascota, fechaNacimiento, pesoMascota, );
                 Adopcion adopcion1 = new Adopcion(adoptante, mascota1, empleado);
                 adopcion1.generarTicket();
             }

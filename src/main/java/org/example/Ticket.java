@@ -12,8 +12,8 @@ public class Ticket {
                 "Edad del adoptante: " + adoptante.getEdad() + "\n" +
                 "Dirección del adoptante: " + adoptante.getDireccion() + "\n" +
                 "Mascota adoptada: " + mascota.getNombre() + "\n" +
-                "Especie: " + mascota.getEspecie().imprimirEspecie() + "\n" +
-                "Recomendaciones de cuidados: " + mascota.getEspecie().cuidadosEspeciales() + "\n" +
+                "Especie: " + mascota.getEspecie() + "\n" +
+                "Recomendaciones de cuidados: " + mascota.getCuidados() + "\n" +
                 "Peso: " + mascota.getPeso() + " kg\n" +
                 "Fecha de nacimiento: " + mascota.getFechaNacimiento() + "\n" +
                 "******************************";
